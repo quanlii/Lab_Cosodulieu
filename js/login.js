@@ -18,11 +18,17 @@ function validated(){
         username.focus();
         return false;
     }
-    if (password.value.length < 5){
+    if (password.value.length < 1){
         password.style.border = "1px solid red";
         pass_error.style.display ="block";
         password.focus();
         return false;
+    }
+    if(username.value=="thuynt" && password.value == 11111){
+        return true;
+    }else if(username.value!=""){
+            error.style.display ="block";
+            return false;
     }
 }
 
@@ -34,19 +40,10 @@ function username_Verify(){
     }
 }
 function pass_Verify(){
-    if(password.value.length >=5){
+    if(password.value.length >=1){
         password.style.border = "1px solid silver";
         pass_error.style.display = "none";
      //   return true;
     }
 }
 
-// function check(){
-//     if(username.value=="thuynt" && password.value == "11111"){
-//         alert("thanh cong");
-//         return true;
-//     }else if(username.value!=""){
-//         error.style.display ="block";
-//         return false;
-//     }
-// }    
