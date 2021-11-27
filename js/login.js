@@ -8,7 +8,7 @@ var error = document.getElementById('error');
 
 username.addEventListener('textInput', username_Verify);
 password.addEventListener('textInput', pass_Verify);
-error.addEventListener('textInput', check);
+error.addEventListener('textInput', check ());
 
 function validated(){
     if (username.value.length < 5){
@@ -24,12 +24,13 @@ function validated(){
         password.focus();
         return false;
     }
-    if(username.value=="thuynt" && password.value == 11111){
+    if(username.value=="thuynt" && password.value == 1111){
         return true;
     }else if(username.value!=""){
             error.style.display ="block";
             return false;
     }
+    
 }
 
 function username_Verify(){
@@ -46,4 +47,5 @@ function pass_Verify(){
      //   return true;
     }
 }
+
 

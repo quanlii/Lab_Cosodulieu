@@ -5,6 +5,7 @@
   font-size: 48px;
   color: white;
   text-indent: 20px;
+  line-height: 86px;
   height: 80px;
   width: 100%;
 } 
@@ -12,7 +13,7 @@ body{
   margin: 0px;
   padding: 0;
   font-family: sans-serif;
-  background: url(/images/Nen1.webp) no-repeat;
+  background: url(../images/Nen1.webp) no-repeat;
   background-position: 0px 0px;
   background-size: cover;
 }
@@ -52,10 +53,10 @@ body{
   padding: 5px 14px 5px 0px;
 }
 #username{
-  background:  url(/images/userIcon.png) no-repeat 4px;
+  background:  url(../images/userIcon.png) no-repeat 4px;
 }
 #password{
-  background:  url(/images/lockIcon.png) no-repeat 4px;
+  background:  url(../images/lockIcon.png) no-repeat 4px;
 }
 .btn{
   width: 100%;
@@ -84,4 +85,55 @@ body{
   border: 1px solid #EF9A9A;
   display: none;
 
+}
+
+#menu_top {
+  background: #030153;
+  height: 30px;
+  margin-left: 0px;
+}
+#menu_top ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+#menu_top ul li {
+  list-style: none;
+  float: left;
+}
+
+#menu_top ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  height: 10px;
+  line-height: 30px;
+  color: #FFF;
+  padding: 0px 20px 20px 20px;
+  border-right: 1px solid #ccc;
+  
+}
+#menu_top ul>li>ul{
+  display: none;
+ 
+}
+#menu_top ul li ul li a{
+  width: 110px;
+  background: #302f77;
+  border: 1px solid #c46f01;
+  position: relative;
+}
+#menu_top ul>li:hover ul{
+  display: block;
+}
+#menu_top ul>li:hover >a{
+  background-color: #c46f01;
+  border-radius: 26px;
+}
+#menu_top #btLogout{
+  font-size: 14px;
+  padding: 4px 5px 4px 5px;
+  border-radius: 12px;
+  border: 2px solid #f08308;
+  float: right ;
 }
